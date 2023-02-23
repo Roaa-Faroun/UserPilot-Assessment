@@ -1,0 +1,57 @@
+aside {
+  width: 255px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: #363740;
+  min-height: 100vh;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+aside * {
+  font-size: 16px;
+}
+.logo {
+  align-self: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+path {
+  color: #dde2ff !important;
+}
+a {
+  color: #dde2ff !important;
+}
+ul {
+  width: 100%;
+}
+li {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 18px 30px;
+  position: relative;
+}
+.active {
+  background-color: rgba(159, 162, 180, 8%);
+  background-color: rgba(159, 162, 180, 8%);
+  position: relative;
+}
+.active::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 3px;
+  height: 100%;
+  left: 0;
+  background-color: #dde2ff;
+}
